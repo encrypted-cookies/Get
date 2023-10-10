@@ -1,3 +1,6 @@
+//this is just a comment 
+
+
 // Morse code dictionary
 const morseCode = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
