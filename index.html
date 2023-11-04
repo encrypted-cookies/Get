@@ -112,7 +112,7 @@
         
           <div class="col-12 col-md-4">
 <!-- ============== CONTACT US ============ -->
-<h2 class="header2" id="contact">CONTACT US</h2>
+<p style="color:white; text-align:center;">PLEASE CLICK SUBMIT BUTTON ONCE AND WAIT 5s</p><h2 class="header2" id="contact">CONTACT US</h2>
 <p>Need help with anything? Ask us and we will get in touch with you right away via email.</p>
 <form id="contact-form" class="formex">
     <input type="text" name="user_name" placeholder="Enter Your Name..." id="namex" required>
@@ -169,7 +169,7 @@ let sN= document.getElementById("dropMenu");
                 // these IDs from the previous steps
                 emailjs.sendForm('service_crujiko', 'template_8nfyra3', this)
                     .then(function() {
-                        window.location.replace("pop3.html")
+                        window.location.href("pop3.html")
                     }, function(error) {
                      location.href("pop2.html")
                     });
