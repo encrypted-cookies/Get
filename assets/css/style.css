@@ -15,7 +15,7 @@ body{
 
 .topNav{
     background: purple;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .nav-flex{
@@ -188,7 +188,7 @@ table tr td{
     display: block;
      margin-top: 10px;
      border-bottom: 2px solid purple;
-     width: 130px;
+     width: 150px;
 }
 
 .formex{
