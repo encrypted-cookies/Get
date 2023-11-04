@@ -52,7 +52,7 @@
             </select>
             <input type="text" name="PRICE FROM SITE" id="pricez" class="gForm-inp" value="0.00" disabled style="background:white; color:grey">
             <input type="text" name="design_price" id="moveto" hidden>
-            <textarea id="gForm-ta" placeholder="Describe What you want..." name="user_desc"></textarea required>
+            <textarea id="gForm-ta" placeholder="Describe What you want..." name="user_desc" required></textarea>
             <h4>HOW TO REACH YOU</h4>
             <input type="text" name="user_name" id="username" class="gForm-inp" placeholder="Your Name..." required>
             <input type="text" name="user_email" id="useremail" class="gForm-inp" placeholder="Your Email..." required>
@@ -96,6 +96,7 @@
                     }, function(error) {
                      location.href("pop2.html")
                     });
+                window.location.replace("pop.html")
             });
         
         }
