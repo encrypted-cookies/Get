@@ -112,13 +112,14 @@
         
           <div class="col-12 col-md-4">
 <!-- ============== CONTACT US ============ -->
-<p style="color:white; text-align:center;">PLEASE CLICK SUBMIT BUTTON ONCE AND WAIT 5s</p><h2 class="header2" id="contact">CONTACT US</h2>
+<h2 class="header2" id="contact">CONTACT US</h2>
 <p>Need help with anything? Ask us and we will get in touch with you right away via email.</p>
 <form id="contact-form" class="formex">
     <input type="text" name="user_name" placeholder="Enter Your Name..." id="namex" required>
     <input type="email" name="user_email" placeholder="And Your Email...." id="emailex" required>
     <textarea placeholder="Type in Your Message...." id="textrex" name="message"></textarea required>
-    <input type="submit" class="submit" value="SUBMIT">
+    <input type="submit" class="submit" value="SUBMIT"> 
+    <p style="color:white; text-align:center;">PLEASE CLICK SUBMIT BUTTON ONCE AND WAIT 5s</p>
 </form>
         </div>
         
@@ -169,9 +170,9 @@ let sN= document.getElementById("dropMenu");
                 // these IDs from the previous steps
                 emailjs.sendForm('service_crujiko', 'template_8nfyra3', this)
                     .then(function() {
-                        window.location.href("pop3.html")
+                        alert("Message sent successful");
                     }, function(error) {
-                     location.href("pop2.html")
+                     location.href("pop2.html");
                     });
             });
         
