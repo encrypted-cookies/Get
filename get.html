@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ALMAHDI DESIGNS| GET A DESIGN</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/media/logo.jpg" type="image/x-icon">
+    <!-- ============= BOX ICONS ============== -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <!-- ========== BOOTSTRAP CSS ========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="text-light bg-dark">
+<!-- ===================================== -->
+<!-- ============ TOP NAV BAR ============== -->
+<section class="topNav">
+   <div class="nav-flex">
+<!-- ============ CHEVRON LEFT ============= -->
+
+<!-- ======= FLEX FOR NAME AND ICON ======== -->
+       <div class="com-nameFlex">
+       <a href="index.html"><button class="chevron"><i class='bx bx-chevron-left'></i></button></a>
+        <img src="assets/media/logo.jpg" alt="" width="35" height="35" class="d-inline-block">ALMAHDI DESIGNS
+   </div>  
+   </div>
+   </section>
+<!-- ===================================== -->
+<!-- ===================================== -->
+    <div class="getform">
+        <div class="getform2">
+<!-- ===================================== -->
+            <form id="get-form">
+            <h4>TELL US WHAT YOU WANT</h4>
+  <input type="hidden" name="contact_number">
+            <select class="gForm-inp" name="design_type" id="selGraph" required>
+                <optgroup label="LOGOS">
+                    <option>Select a Type</option>
+                    <option value="simple logo">Simple logo</option>
+                    <option value="professional logo">Professional logo</option>
+                    <option value="gaming logo">Gaming Logo</option>
+                </optgroup>
+                <optgroup label="FLYERS">
+                    <option value="religious flyer">Religious Flyers</option>
+                    <option value="business flyer">Business Flyers</option>
+                </optgroup>
+                <optgroup label="OTHERS">
+                   <option value="gaming banner">Gaming banner</option>
+                   <option value="book cover">Book Cover/E-Book Cover</option>
+                </optgroup>
+                <option value="others">Others</option>
+            </select>
+            <input type="text" name="PRICE FROM SITE" id="pricez" class="gForm-inp" value="0.00" disabled style="background:white; color:grey">
+            <input type="text" name="design_price" id="moveto" hidden>
+            <textarea id="gForm-ta" placeholder="Describe What you want..." name="user_desc"></textarea required>
+            <h4>HOW TO REACH YOU</h4>
+            <input type="text" name="user_name" id="username" class="gForm-inp" placeholder="Your Name..." required>
+            <input type="text" name="user_email" id="useremail" class="gForm-inp" placeholder="Your Email..." required>
+            <input type="submit" value="SUBMIT" class="gForm-sub">
+        </form>
+        </div>
+    </div>
+    
+    <div class="container-fluid end">
+    &copy;2023 Almahdi Studios.
+    All Right Reserved.
+    Designed by <span><a href="max-corp.netlify.app"><i class='bx bxl-gmail'></i>ax Corp Dev</a></span>
+</div>
+<!-- ===================================== -->
+<!-- ===================================== -->
+<!-- ===================================== -->
+<!--=== BOOTSTRAP JS BUNDLE WITH POPPER ====-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- ===================================== -->
+<script src="assets/js/script.js"></script>
+<!-- ===================================== -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!-- ===================================== -->
+<!-- ===================================== -->
+<script type="text/javascript">
+        (function() {
+          
+            emailjs.init('b-ap3Y2---DmLD6S7');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('get-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_crujiko', 'template_e4j8qmv', this)
+                    .then(function() {
+                        window.location.replace("pop.html")
+                    }, function(error) {
+                     location.href("pop2.html")
+                    });
+            });
+        
+        }
+    </script>
+   
+</body>
+</html>
