@@ -156,7 +156,7 @@ let sN= document.getElementById("dropMenu");
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <!-- ===================================== -->
 <!-- ===================================== -->
-<script type="text/javascript">
+ <script type="text/javascript">
         (function() {
           
             emailjs.init('b-ap3Y2---DmLD6S7');
@@ -171,9 +171,9 @@ let sN= document.getElementById("dropMenu");
                 // these IDs from the previous steps
                 emailjs.sendForm('service_crujiko', 'template_8nfyra3', this)
                     .then(function() {
-                    location.replace("pop3.html");
+                        window.location.replace("pop.html")
                     }, function(error) {
-                     location.href("pop2.html");
+                     location.href("pop2.html")
                     });
             });
         
