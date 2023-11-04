@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.topNav{
+    background: purple;
+    font-size: 25px;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.com-nameFlex{
+    display: flex;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.com-nameFlex img{
+    padding: 3px;
+}
+
+.menuLinks{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    display: none;
+}
+
+.menuLinks:active{
+    color: white;
+}
+
+.menuLinks:hover{
+    color: white;
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px white;
+    transition: 0.4s;
+}
+}
+.current{
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px white;
+}
+
+.xbtn{
+    background: none;
+    border: 0;
+}
+
+@media screen and (min-width: 500px){
+    .menuLinks{
+        display: block;
+    }
+    .xbtn{
+        display: none;
+    }
+}
+
+/*-- ======== HAMBURGER X EFFECT ========= --*/
+/*-- ======== HAMBURGER X EFFECT ========= --*/
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color:white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -5px) rotate(45deg);
+}
+/*-- ===================================== --*/
+/*-- ===================================== --*/
+
+.dropMenu a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.dropMenu a:hover{
+    color: white;
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px white;
+    transition: 0.4s;
+}
+
+.dropMenu a:active{
+    color: white;
+}
+
+.dropMenu{
+    background: purple;
+    height:0;
+    overflow: hidden;
+    transition:0.4s;
+}
+
+.showNav{
+    height: 200px;
+}
+
+.bannerCont{
+    padding: 0;
+    margin: 0;
+}
+
+.bannerImg{
+    max-width: 100%;
+}
+
+.get-btn{
+    background: purple;
+    border-radius: 20px;
+    border: 2px ridge white;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px 3px purple;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.get-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.get-btn a:hover, .get-btn a:active{
+    color: white;
+}
+
+.header{
+     display: block;
+     margin-top: 10px;
+     border-bottom: 2px solid purple;
+     width: 90px;
+}
+
+
+.com{
+    font-weight: bold;
+    color: purple;
+}
+
+table{
+    border: 2px solid purple;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table tr{
+    border: 2px solid purple;
+}
+
+table tr td{
+    border: 2px solid purple;
+    padding: 5px;
+}
+
+.header2{
+    display: block;
+     margin-top: 10px;
+     border-bottom: 2px solid purple;
+     width: 130px;
+}
+
+.formex{
+    border: 2px solid purple;
+    background: ;
+    padding: 20px;
+    margin: 15px;
+}
+
+#namex, #emailex{
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    outline: 0;
+    border: 0;
+    transition: 0.4s;
+}
+
+#emailex:hover, #namex:hover{
+    box-shadow: 2px 3px purple;
+    height: 42px;
+    width: 92%;
+}
+
+textarea{
+    height: 100px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    transition: 0.4s;
+}
+
+textarea:hover{
+    box-shadow: 2px 3px purple;
+    height: 102px;
+    width: 92%;
+}
+
+.submit{
+    background: purple;
+    height: 50px;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.4s;
+    color: white;
+    margin: 10px 0;
+}
+
+.submit:hover{
+    box-shadow: 2px 2px 3px purple;
+    height: 52px;
+    width: 90%;
+}
+
+form{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.end{
+    background: #313638;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 100%;
+    padding: 10px;
+}
+.end a{
+    color: purple;
+    font-weight: bolder;
+}
+
+.end a:hover, .end a:active {
+    color: purple;
+}
+
+/*-- ===================================== --*/
+/*-- ===================================== --*/
+.chevron{
+    margin-right: 15px;
+    font-size: 25px;
+    color: white;
+    background: none;
+    border: 0;
+}
+
+.getform{
+    width: 90%;
+    border: 2px ridge purple;
+    margin: 20px auto;
+    padding: 2px;
+}
+
+.getform2{
+    width: 100%;
+    border: 2px dotted purple;
+    padding: 10px;
+    text-align: center;
+}
+
+.gForm-inp{
+    height:35px;
+    width: 90%;
+    margin: 5px;
+    border-radius: 10px;
+    outline: none;
+    border:0;
+    color: black;
+    transition: 0.4s;
+}
+
+.gForm-inp:hover, #gForm-ta{
+    width: 92%;
+    height: 36px;
+    box-shadow: 2px 3px 2px purple;
+}
+
+#gForm-ta{
+    height: 100px;
+}
+
+.gForm-sub{
+    height:35px;
+    width: 90%;
+    margin: 5px;
+    border-radius: 10px;
+    outline: none;
+    border:0;
+    color: white;
+    background: purple;
+    box-shadow: 2px 2px 3px purple;
+}
+
+
+#getpop{
+    background: white;
+    border: ridge 2px purple;
+    position: fixed;
+    box-shadow: 2px 3px 2px purple;
+    display: block;
+    margin:auto;
+    color: black;
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.btnpop{
+    border: 0;
+    background:purple;
+    padding: 5px 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+.btnpop a{
+    text-decoration: none;
+    color: white;
+}
+
+.greentick{
+    display: block;
+    margin: 5px auto;
+}
+/*<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=38C2FF&width=435&lines=Hello+friend+%F0%9F%91%8B...;I+am+Max+Ni9e...!!!;Nice+to+meet+you%F0%9F%98%87" alt="Max Ni9e is Typing" /></a> 
+</p>
+*/
+  
