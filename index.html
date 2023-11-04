@@ -171,7 +171,7 @@ let sN= document.getElementById("dropMenu");
                 // these IDs from the previous steps
                 emailjs.sendForm('service_crujiko', 'template_8nfyra3', this)
                     .then(function() {
-                        alert("Message sent successful");
+                    location.replace("pop3.html");
                     }, function(error) {
                      location.href("pop2.html");
                     });
